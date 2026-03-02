@@ -5,6 +5,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.flow
 
+// IMPORTANT: The playground functions stopped working with Android Studio Otter,
+// that's why I moved them from the "app" gradle module into a standalone Kotlin library
+// gradle module called playground.
 suspend fun main() = coroutineScope {
 
     val flow = flow {

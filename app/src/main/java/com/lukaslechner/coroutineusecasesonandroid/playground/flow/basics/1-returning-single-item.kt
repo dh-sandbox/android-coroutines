@@ -2,6 +2,9 @@ package com.lukaslechner.coroutineusecasesonandroid.playground.flow.basics
 
 import java.math.BigInteger
 
+// IMPORTANT: The playground functions stopped working with Android Studio Otter,
+// that's why I moved them from the "app" gradle module into a standalone Kotlin library
+// gradle module called playground.
 fun main() {
     val result = calculateFactorialOf(5)
     println("Result: $result")
