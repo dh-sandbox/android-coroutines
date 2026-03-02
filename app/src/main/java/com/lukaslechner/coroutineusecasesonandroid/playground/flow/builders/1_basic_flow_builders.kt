@@ -6,6 +6,9 @@ import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 
+// IMPORTANT: The playground functions stopped working with Android Studio Otter,
+// that's why I moved them from the "app" gradle module into a standalone Kotlin library
+// gradle module called playground.
 suspend fun main() {
 
     val firstFlow = flowOf<Int>(1).collect { emittedValue ->

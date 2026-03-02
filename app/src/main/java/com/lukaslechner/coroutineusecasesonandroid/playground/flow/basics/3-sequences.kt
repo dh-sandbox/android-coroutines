@@ -3,6 +3,9 @@ package com.lukaslechner.coroutineusecasesonandroid.playground.flow.basics
 import com.lukaslechner.coroutineusecasesonandroid.playground.utils.printWithTimePassed
 import java.math.BigInteger
 
+// IMPORTANT: The playground functions stopped working with Android Studio Otter,
+// that's why I moved them from the "app" gradle module into a standalone Kotlin library
+// gradle module called playground.
 fun main() {
     val startTime = System.currentTimeMillis()
     calculateFactorialOf(5).forEach {
