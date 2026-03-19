@@ -32,5 +32,6 @@ jobs:
           token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
           files: app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml
           format: jacoco
+          skip-missing-files: true
         env:
           JACOCO_SOURCE_PATH: app/src/main/java
