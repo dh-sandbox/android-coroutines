@@ -126,7 +126,9 @@ task jacocoTestReport(type: JacocoReport) {
     }
 
     def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*',
-                       '**/*Test*.*', 'android/**/*.*', '**/*ViewModelLazy*.*']
+                       '**/*Test*.*', 'android/**/*.*', '**/*ViewModelLazy*.*',
+                       '**/*CoroutineExceptionHandler*.*', '**/*Emitters*.*',
+                       '**/*SafeCollector*.*', '**/*Reduce*.*', '**/*ActivityViewModelLazy*.*']
     def debugTree = fileTree(dir: "${buildDir}/tmp/kotlin-classes/debug", excludes: fileFilter)
     def mainSrc = "${project.projectDir}/src/main/java"
 
