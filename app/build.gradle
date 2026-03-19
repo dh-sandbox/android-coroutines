@@ -119,7 +119,7 @@ tasks.withType(Test) {
     jacoco.excludes = ['jdk.internal.*']
 }
 
-task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
+task jacocoTestReport(type: JacocoReport) {
     reports {
         xml.required = true
         html.required = false
